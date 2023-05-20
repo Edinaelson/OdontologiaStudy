@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -32,7 +33,23 @@ class MainActivity2 : AppCompatActivity() {
         alphaAdapters = AlphaAdapters(applicationContext, arrayList!!)
         recyclerView?.adapter = alphaAdapters
 
+        //botao voltar
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setHomeAsUpIndicator(R.drawable.back) // Defina o novo ícone de voltar
+        }
+
     }
+
+    //funcao do botao voltar
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
+
 
     private fun setDataInList() : ArrayList<AlphaChar>{
         var items:ArrayList<AlphaChar> = ArrayList()

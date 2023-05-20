@@ -7,9 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-
 class Adapter(
-
     //aqui onde fica as configuracoes da lista ou sumario
 
     private val myList: List<String>,
@@ -34,13 +32,12 @@ class Adapter(
 
             when(position){
                 1 -> {
-                    val intent = Intent(holder.textName.context, MainActivity::class.java)
+                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+                    intent.putExtra("PDF", 5)
                     holder.textName.context.startActivity(intent)
                 }
             }
-
         }
-
     }
 
     override fun getItemCount() = myList.size
