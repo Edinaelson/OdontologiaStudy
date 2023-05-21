@@ -24,6 +24,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
+        //logica para povoar os cardview de gridLayout
         recyclerView = findViewById(R.id.my_recycler_view)
         gridLayoutManager = GridLayoutManager(applicationContext,3,LinearLayoutManager.VERTICAL,false)
         recyclerView?.layoutManager = gridLayoutManager
