@@ -42,10 +42,32 @@ class RecyclerView2 : AppCompatActivity() {
     }
 
     private fun choice(): List<String>{
-        val pagina = intent.getIntExtra("pode",1)
-        if (pagina == 4){
+        val pagina = intent.getIntExtra("lista",2)
+        if (pagina == 2){
             return listOf(
-                "Java",
+                "1-Acupuntura",
+                "2-Cirurgia e Traumatologia Bucomaxilofaciais",
+                "3-Dentística",
+                "4-Disfunção Temporomandibular e Dor Orofacial",
+                "5-Endodontia",
+                "6-Estomatologia",
+                "7-Harmonização orofacial",
+                "8-Homeopatia",
+                "9-Implantodontia",
+                "10-Odontogeriatria",
+                "11-Odontologia do Esporte",
+                "12-Odontologia do Trabalho",
+                "13-Odontologia Legal",
+                "14-Odontologia para Pacientes com Necessidades Especiais",
+                "15-Odontopediatria",
+                "16-Ortodontia",
+                "17-Ortopedia Funcional dos Maxilares",
+                "18-Patologia Oral e Maxilofacial",
+                "19-Periodontia",
+                "20-Prótese Bucomaxilofacial",
+                "21-Prótese Dentária",
+                "22-Radiologia Odontológica e Imaginologia",
+                "23-Saúde Coletiva"
             )
         }
 //        val pagina2 = intent.getIntExtra("Livro4",5)

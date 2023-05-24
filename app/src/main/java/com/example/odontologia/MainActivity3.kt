@@ -58,6 +58,7 @@ class MainActivity3 : AppCompatActivity() {
         var items:ArrayList<AlphaChar> = ArrayList()
 
         items.add(AlphaChar(R.drawable.img12, "Sim ou não")) //01
+        items.add(AlphaChar(R.drawable.etica08, "Áreas odontológicas")) //02
 
         return items
     }

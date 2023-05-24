@@ -46,11 +46,11 @@ class AlphaAdapters2(var context: Context, var arrayList: ArrayList<AlphaChar>) 
                     intent.putExtra("pode", 1)
                     holder.icons.context.startActivity(intent)
                 }
-//                1 -> {
-//                    val intent = Intent(holder.icons.context, com.example.odontologia.RecyclerView2::class.java)
-//                    intent.putExtra("Livro4", 5)
-//                    holder.icons.context.startActivity(intent)
-//                }
+                1 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.RecyclerView2::class.java)
+                    intent.putExtra("lista", 2)
+                    holder.icons.context.startActivity(intent)
+                }
             }
         }
 
