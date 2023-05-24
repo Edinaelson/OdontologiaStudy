@@ -1,10 +1,12 @@
 package com.example.odontologia
 
+import android.app.Activity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.recyclerview.widget.RecyclerView
 
 class Adapter(
@@ -28,15 +30,72 @@ class Adapter(
         holder.itemView.setOnClickListener{
             nameSelected(name)
 
-            //"Logica para montar index do pdf"
+            //Logica para pegar index por nome
+//            when(holder.textName.text){
+//                "Kotlin" -> {
+//                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+//                    intent.putExtra("PDF", 5)
+//                    holder.textName.context.startActivity(intent)
+//                }
+//                //teste do primeiro grid layout
+//                "B" -> {
+//                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+//                    intent.putExtra("C", 0)
+//                    holder.textName.context.startActivity(intent)
+//                }
+//            }
 
-            when(position){
-                1 -> {
-                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
-                    intent.putExtra("PDF", 5)
-                    holder.textName.context.startActivity(intent)
-                }
+//            val textName = holder.textName.text
+//            when {
+//                textName == "Kotlin" -> {
+//                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+//                    intent.putExtra("PDF", 5)
+//                    holder.textName.context.startActivity(intent)
+//                    return@setOnClickListener
+//                }
+//                textName == "B" -> {
+//                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+//                    intent.putExtra("C", 0)
+//                    holder.textName.context.startActivity(intent)
+//                }
+//            }
+
+            //"Logica para montar index do pdf"
+            //experimentar abrir PDF pelo nome, pq há varias lista, a posição vai ser quase as mesma.
+//            when(position){
+//                1 -> {
+//                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+//                    intent.putExtra("PDF", 5)
+//                    holder.textName.context.startActivity(intent)
+//                }
+//                2 -> {
+//                    val intent = Intent(holder.textName.context, MyPdfView::class.java)
+//                    intent.putExtra("C", 0)
+//                    holder.textName.context.startActivity(intent)
+//                }
+//            }
+            val textName = holder.textName.text
+
+            if (textName == "Kotlin") {
+                val intent = Intent(holder.textName.context, MyPdfView::class.java)
+                intent.putExtra("PDF", 10)
+                holder.textName.context.startActivity(intent)
+
             }
+
+            else if (textName == "PHP") {
+                val intent = Intent(holder.textName.context, MyPdfView::class.java)
+                intent.putExtra("PDF",5)
+                holder.textName.context.startActivity(intent)
+
+            }
+
+            else if(textName == "Java") {
+                val intent = Intent(holder.textName.context, MyPdfView::class.java)
+                intent.putExtra("PDF", 0)
+                holder.textName.context.startActivity(intent)
+            }
+
         }
     }
 

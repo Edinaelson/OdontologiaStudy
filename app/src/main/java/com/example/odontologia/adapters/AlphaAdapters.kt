@@ -41,8 +41,59 @@ class AlphaAdapters(var context: Context, var arrayList: ArrayList<AlphaChar>) :
 
             //aqui fica as novas intents para ir para recycler view
             when (position) {
+                0 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 1)
+                    holder.icons.context.startActivity(intent)
+                }
                 1 -> {
-                    val intent = Intent(holder.icons.context, com.example.odontologia.RecyclerView::class.java)
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 2)
+                    holder.icons.context.startActivity(intent)
+                }
+                2 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 3)
+                    holder.icons.context.startActivity(intent)
+                }
+                3 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 4)
+                    holder.icons.context.startActivity(intent)
+                }
+                4 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 5)
+                    holder.icons.context.startActivity(intent)
+                }
+                5 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 6)
+                    holder.icons.context.startActivity(intent)
+                }
+                6 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 7)
+                    holder.icons.context.startActivity(intent)
+                }
+                7 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 8)
+                    holder.icons.context.startActivity(intent)
+                }
+                8 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 9)
+                    holder.icons.context.startActivity(intent)
+                }
+                9 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 10)
+                    holder.icons.context.startActivity(intent)
+                }
+                10 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MypdfViewEtica::class.java)
+                    intent.putExtra("etica", 11)
                     holder.icons.context.startActivity(intent)
                 }
             }

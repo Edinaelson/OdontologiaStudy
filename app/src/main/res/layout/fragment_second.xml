@@ -7,11 +7,12 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageButton
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/dente02"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/podeounao"
         android:scaleType="fitCenter"
         android:layout_centerInParent="true"
-        android:onClick="buttonSecond"/>
+        android:onClick="buttonSecond"
+        android:background="#7C709C"/>
 
 </RelativeLayout>

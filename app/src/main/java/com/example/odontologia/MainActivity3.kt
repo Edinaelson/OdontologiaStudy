@@ -53,22 +53,11 @@ class MainActivity3 : AppCompatActivity() {
         return true
     }
 
-    //aqui onde monta o povoamento
+    //aqui onde monta o povoamento da tela 02
     private fun setDataInList() : ArrayList<AlphaChar>{
         var items:ArrayList<AlphaChar> = ArrayList()
 
-        items.add(AlphaChar(R.drawable.img01, "Imagem 01"))
-        items.add(AlphaChar(R.drawable.img02, "Imagem 02"))
-        items.add(AlphaChar(R.drawable.img03, "Imagem 03"))
-        items.add(AlphaChar(R.drawable.img01, "Repetido 01"))
-        items.add(AlphaChar(R.drawable.img02, "Repetido 02"))
-        items.add(AlphaChar(R.drawable.img03, "Repetido 03"))
-        items.add(AlphaChar(R.drawable.img02, "Hello 02"))
-        items.add(AlphaChar(R.drawable.img01, "Hello 01"))
-        items.add(AlphaChar(R.drawable.img03, "Hello 03"))
-        items.add(AlphaChar(R.drawable.img02, "Hello"))
-        items.add(AlphaChar(R.drawable.img01, "Hello"))
-        items.add(AlphaChar(R.drawable.img03, "Hello"))
+        items.add(AlphaChar(R.drawable.img12, "Sim ou não")) //01
 
         return items
     }

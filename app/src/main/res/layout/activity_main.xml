@@ -10,15 +10,38 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
 
-        <com.google.android.material.appbar.MaterialToolbar
+        <LinearLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:title="Dentista Atualizado"
-            app:titleTextColor="@android:color/white" />
+            android:orientation="horizontal" android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Atualiza dentista"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/textViewSobre"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Sobre"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:onClick="buttonAbout"/>
+
+        </LinearLayout>
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
