@@ -13,26 +13,26 @@ Projeto de Odontologia, que abri pdfs de acordo com o assunto clicado.
 ### Telas do Aplicativo
 
 > ### Icone do App
-> ![](app/src/main/img/tela01.jpg)
+> <img src="app/src/main/img/tela01.jpg" width="200" height="400" alt="Icone do App">
 
-> ### Tela Inicial 
-> ![](app/src/main/img/tela02.jpg)
+> ### Tela Inicial
+> <img src="app/src/main/img/tela02.jpg" width="200" height="400" alt="Tela Inicial">
 
 > ### GridLayout
-> ![](app/src/main/img/tela03.jpg)
- 
+> <img src="app/src/main/img/tela03.jpg" width="200" height="400" alt="GridLayout">
+
 >  ### Pdf aberto
-> ![](app/src/main/img/tela04.jpg)
+> <img src="app/src/main/img/tela04.jpg" width="200" height="400" alt="Pdf aberto">
 
 > ### Botão Sobre
-> ![](app/src/main/img/tela05.jpg)
+> <img src="app/src/main/img/tela05.jpg" width="200" height="400" alt="Botão Sobre">
 
 > ### Tela Incial
-> ![](app/src/main/img/tela06.jpg)
+> <img src="app/src/main/img/tela06.jpg" width="200" height="400" alt="Tela Inicial">
 
 > ### GridLayout
-> ![](app/src/main/img/tela07.jpg)
+> <img src="app/src/main/img/tela07.jpg" width="200" height="400" alt="GridLayout">
 
 > ### RecyclerView
-> ![](app/src/main/img/tela08.jpg)
-> ![](app/src/main/img/tela09.jpg)
+> <img src="app/src/main/img/tela08.jpg" width="200" height="400" alt="RecyclerView">
+> <img src="app/src/main/img/tela09.jpg" width="200" height="400" alt="RecyclerView">
