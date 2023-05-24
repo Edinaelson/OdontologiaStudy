@@ -39,12 +39,18 @@ class AlphaAdapters2(var context: Context, var arrayList: ArrayList<AlphaChar>) 
         holder.itemView.setOnClickListener {
             Toast.makeText(context, alphaChar.alphaChar, Toast.LENGTH_SHORT).show()
 
-            //aqui fica as novas intents para ir para recycler view
+            //aqui fica as novas intents para ir para recycler view, sumario no caso
             when (position) {
-                1 -> {
-                    val intent = Intent(holder.icons.context, com.example.odontologia.RecyclerView::class.java)
+                0 -> {
+                    val intent = Intent(holder.icons.context, com.example.odontologia.MyPdfView::class.java)
+                    intent.putExtra("pode", 1)
                     holder.icons.context.startActivity(intent)
                 }
+//                1 -> {
+//                    val intent = Intent(holder.icons.context, com.example.odontologia.RecyclerView2::class.java)
+//                    intent.putExtra("Livro4", 5)
+//                    holder.icons.context.startActivity(intent)
+//                }
             }
         }
 

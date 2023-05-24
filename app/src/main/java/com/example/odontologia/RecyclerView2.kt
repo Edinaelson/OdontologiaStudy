@@ -2,14 +2,12 @@ package com.example.odontologia
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.odontologia.databinding.ActivityRecyclerViewBinding
 
-class RecyclerView : AppCompatActivity() {
-
+class RecyclerView2 : AppCompatActivity() {
     private lateinit var binding: ActivityRecyclerViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,22 +36,40 @@ class RecyclerView : AppCompatActivity() {
     private fun initRecyclerView(){
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.setHasFixedSize(true)
-        binding.recyclerView.adapter = Adapter(getList()){ name ->
-            Toast.makeText(this,name,Toast.LENGTH_SHORT).show()
+        binding.recyclerView.adapter = Adapter(choice()){ name ->
+            Toast.makeText(this,name, Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun getList() : List<String>{
-        val pagina = intent.getIntExtra("Livro4", 4)
-        if(pagina == 4){
+    private fun choice(): List<String>{
+        val pagina = intent.getIntExtra("pode",1)
+        if (pagina == 4){
             return listOf(
-                "a",
-                "b",
-                "c",
-                "d"
+                "Java",
             )
         }
-        return emptyList()
+//        val pagina2 = intent.getIntExtra("Livro4",5)
+//        if (pagina2 == 5){
+//            return listOf(
+//                "Python",
+//                "Object-C",
+//                "Swift",
+//                "pagina 01"
+//            )
+//        }
+        return emptyList() // Se nenhum dos blocos anteriores for executado, retorna uma lista vazia
     }
+
+//    private fun getList() = listOf(
+//        "Java",
+//        "PHP",
+//        "SQL",
+//        "C++",
+//        "CSharp",
+//        "Kotlin",
+//        "Python",
+//        "Object-C",
+//        "Swift"
+//    )
 
 }

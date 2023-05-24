@@ -55,9 +55,19 @@ class MainActivity2 : AppCompatActivity() {
     private fun setDataInList() : ArrayList<AlphaChar>{
         var items:ArrayList<AlphaChar> = ArrayList()
 
-        items.add(AlphaChar(R.drawable.img01, "Imagem numero 01"))
-        items.add(AlphaChar(R.drawable.img02, "Imagem numero 02"))
-        items.add(AlphaChar(R.drawable.img03, "Imagem numero 03"))
+        //Aqui fica o povoamento do gridÇayout
+
+        items.add(AlphaChar(R.drawable.etica01, "Origem do código de ética")) //01
+        items.add(AlphaChar(R.drawable.etica02, "importância do código de ética")) //02
+        items.add(AlphaChar(R.drawable.etica03, "Ética em relação a cobrança de honorários profissionais")) //03
+        items.add(AlphaChar(R.drawable.etica04, "Pontos considerados como fraude pelo Código de Ética")) //04
+        items.add(AlphaChar(R.drawable.etica05, "Ética com relação a presença na internet")) //05
+        items.add(AlphaChar(R.drawable.etica06, "Ética em relação ao sigilo profissional")) //06
+        items.add(AlphaChar(R.drawable.eticaimg07, "Ética em relação as especialidades odontológicas")) //07
+        items.add(AlphaChar(R.drawable.etica08, "Ética na relação com o paciente")) //08
+        items.add(AlphaChar(R.drawable.etica10, "Ética em relação as estratégias de marketing")) //09
+        items.add(AlphaChar(R.drawable.etica11, "Sanções para quem não cumpre o código de ética")) //10
+        items.add(AlphaChar(R.drawable.etica12, "Código de ética -CFO")) //11
 
         return items
     }
